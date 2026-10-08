@@ -1,0 +1,327 @@
+[
+  {
+    "type": "heading",
+    "defaultValue": "HA Watch"
+  },
+  {
+    "type": "text",
+    "defaultValue": "Three lines of the watch face are yours: the line above the time and the two lines below it. Each takes up to two Home Assistant values. Leave a line empty and it keeps its default. Date, time and battery level are fixed and need no setup."
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Connection"
+      },
+      {
+        "type": "text",
+        "defaultValue": "The address must be reachable from your phone &mdash; so use the external URL, not <code>homeassistant.local</code>. Create the token in Home Assistant under <em>Profile &rarr; Security &rarr; Long-lived access tokens</em>."
+      },
+      {
+        "type": "input",
+        "messageKey": "haUrl",
+        "label": "URL",
+        "defaultValue": "",
+        "attributes": {
+          "placeholder": "https://ha.example.org",
+          "type": "url",
+          "autocorrect": "off",
+          "autocapitalize": "off"
+        }
+      },
+      {
+        "type": "input",
+        "messageKey": "haToken",
+        "label": "Access Token",
+        "defaultValue": "",
+        "attributes": {
+          "placeholder": "eyJhbGciOi...",
+          "autocorrect": "off",
+          "autocapitalize": "off"
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Line above the time"
+      },
+      {
+        "type": "text",
+        "defaultValue": "Default: sunrise and sunset. You can find the entity ID in Home Assistant under <em>Settings &rarr; Devices &amp; Services &rarr; Entities</em>. If you leave the unit empty, the one from Home Assistant will be used. With only one entity the value uses the full width and the divider disappears."
+      },
+      {
+        "type": "input",
+        "messageKey": "entity3",
+        "label": "Left Entity ID",
+        "defaultValue": "",
+        "attributes": {
+          "placeholder": "sensor.outside_temperature",
+          "autocorrect": "off",
+          "autocapitalize": "off"
+        }
+      },
+      {
+        "type": "input",
+        "messageKey": "unit3",
+        "label": "Left Unit",
+        "defaultValue": "",
+        "attributes": {
+          "placeholder": "auto",
+          "autocorrect": "off",
+          "autocapitalize": "off"
+        }
+      },
+      {
+        "type": "input",
+        "messageKey": "entity4",
+        "label": "Right Entity ID",
+        "defaultValue": "",
+        "attributes": {
+          "placeholder": "sensor.humidity",
+          "autocorrect": "off",
+          "autocapitalize": "off"
+        }
+      },
+      {
+        "type": "input",
+        "messageKey": "unit4",
+        "label": "Right Unit",
+        "defaultValue": "",
+        "attributes": {
+          "placeholder": "auto",
+          "autocorrect": "off",
+          "autocapitalize": "off"
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "First line below the time"
+      },
+      {
+        "type": "text",
+        "defaultValue": "Default: current weather, for example &ldquo;Clear, 14 &deg;C&rdquo;. This is the line that held your two values in version 1.1, so anything you set up there is still here."
+      },
+      {
+        "type": "input",
+        "messageKey": "entity1",
+        "label": "Left Entity ID",
+        "defaultValue": "",
+        "attributes": {
+          "placeholder": "sensor.storage_charge_level_total",
+          "autocorrect": "off",
+          "autocapitalize": "off"
+        }
+      },
+      {
+        "type": "input",
+        "messageKey": "unit1",
+        "label": "Left Unit",
+        "defaultValue": "",
+        "attributes": {
+          "placeholder": "auto",
+          "autocorrect": "off",
+          "autocapitalize": "off"
+        }
+      },
+      {
+        "type": "input",
+        "messageKey": "entity2",
+        "label": "Right Entity ID",
+        "defaultValue": "",
+        "attributes": {
+          "placeholder": "sensor.storage_available_energy",
+          "autocorrect": "off",
+          "autocapitalize": "off"
+        }
+      },
+      {
+        "type": "input",
+        "messageKey": "unit2",
+        "label": "Right Unit",
+        "defaultValue": "",
+        "attributes": {
+          "placeholder": "auto",
+          "autocorrect": "off",
+          "autocapitalize": "off"
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Second line below the time"
+      },
+      {
+        "type": "text",
+        "defaultValue": "Default: steps and distance, both read from the watch itself."
+      },
+      {
+        "type": "input",
+        "messageKey": "entity5",
+        "label": "Left Entity ID",
+        "defaultValue": "",
+        "attributes": {
+          "placeholder": "sensor.pv_power",
+          "autocorrect": "off",
+          "autocapitalize": "off"
+        }
+      },
+      {
+        "type": "input",
+        "messageKey": "unit5",
+        "label": "Left Unit",
+        "defaultValue": "",
+        "attributes": {
+          "placeholder": "auto",
+          "autocorrect": "off",
+          "autocapitalize": "off"
+        }
+      },
+      {
+        "type": "input",
+        "messageKey": "entity6",
+        "label": "Right Entity ID",
+        "defaultValue": "",
+        "attributes": {
+          "placeholder": "sensor.grid_power",
+          "autocorrect": "off",
+          "autocapitalize": "off"
+        }
+      },
+      {
+        "type": "input",
+        "messageKey": "unit6",
+        "label": "Right Unit",
+        "defaultValue": "",
+        "attributes": {
+          "placeholder": "auto",
+          "autocorrect": "off",
+          "autocapitalize": "off"
+        }
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Time and Date"
+      },
+      {
+        "type": "text",
+        "defaultValue": "&ldquo;Follow the watch&rdquo; uses the 24-hour setting from the watch itself, under <em>Settings &rarr; Date &amp; Time</em>. In 12-hour format a small &ldquo;am&rdquo; or &ldquo;pm&rdquo; sits to the left of the time. Sunrise and sunset only drop the leading zero &mdash; there is no room for a suffix next to the icons, and the icons already tell you which half of the day it is."
+      },
+      {
+        "type": "select",
+        "messageKey": "timeFormat",
+        "label": "Format",
+        "defaultValue": "watch",
+        "options": [
+          {
+            "label": "Follow the watch",
+            "value": "watch"
+          },
+          {
+            "label": "24 hours",
+            "value": "24"
+          },
+          {
+            "label": "12 hours (am/pm)",
+            "value": "12"
+          }
+        ]
+      },
+      {
+        "type": "text",
+        "defaultValue": "Weekday and month names are always English. &ldquo;Automatic&rdquo; puts the month first only in regions that write it that way, and the day first everywhere else."
+      },
+      {
+        "type": "select",
+        "messageKey": "dateFormat",
+        "label": "Date",
+        "defaultValue": "auto",
+        "options": [
+          {
+            "label": "Automatic",
+            "value": "auto"
+          },
+          {
+            "label": "Tue, 25 Aug",
+            "value": "dayMonth"
+          },
+          {
+            "label": "Tue, Aug 25",
+            "value": "monthDay"
+          },
+          {
+            "label": "Tue, 25.08.",
+            "value": "numericDe"
+          },
+          {
+            "label": "Tue, 08/25",
+            "value": "numericUs"
+          },
+          {
+            "label": "2026-08-25",
+            "value": "iso"
+          },
+          {
+            "label": "Tu, 25. Aug (as before)",
+            "value": "classic"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "section",
+    "items": [
+      {
+        "type": "heading",
+        "defaultValue": "Weather"
+      },
+      {
+        "type": "text",
+        "defaultValue": "Only used for the default of the first line below the time. Data comes from <a href=\"https://open-meteo.com\">Open-Meteo</a> for your current location; no account needed. There is no way to read the unit setting of the Pebble app, so &ldquo;Automatic&rdquo; goes by your phone's region &mdash; switch it here if that guesses wrong."
+      },
+      {
+        "type": "select",
+        "messageKey": "tempUnit",
+        "label": "Temperature",
+        "defaultValue": "auto",
+        "options": [
+          {
+            "label": "Automatic",
+            "value": "auto"
+          },
+          {
+            "label": "Celsius (°C)",
+            "value": "celsius"
+          },
+          {
+            "label": "Fahrenheit (°F)",
+            "value": "fahrenheit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "type": "submit",
+    "defaultValue": "Save"
+  }
+]

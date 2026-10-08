@@ -1,0 +1,78 @@
+{
+    "author": "Axel Kark",
+    "dependencies": {
+        "@rebble/clay": "1.0.8"
+    },
+    "keywords": [
+        "pebble-app",
+        "watchface",
+        "home-assistant"
+    ],
+    "name": "ha-watch",
+    "pebble": {
+        "capabilities": [
+            "location",
+            "configurable",
+            "health"
+        ],
+        "displayName": "HA Watch",
+        "enableMultiJS": true,
+        "messageKeys": [
+            "dummy",
+            "value1",
+            "unit1",
+            "value2",
+            "unit2",
+            "latitude",
+            "longitude",
+            "error",
+            "value3",
+            "unit3",
+            "value4",
+            "unit4",
+            "value5",
+            "unit5",
+            "value6",
+            "unit6",
+            "rowmode",
+            "weather",
+            "temperature",
+            "tempunit",
+            "timeformat",
+            "dateformat"
+        ],
+        "projectType": "moddable",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/Pebble_25x25_Sunset.png",
+                    "name": "SUNSET",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/Pebble_25x25_Sunrise.png",
+                    "name": "SUNRISE",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/steps.png",
+                    "name": "STEPS",
+                    "targetPlatforms": null,
+                    "type": "bitmap"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "emery",
+            "gabbro"
+        ],
+        "uuid": "013f5b1c-e688-4bb5-841b-f3ca41505d23",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.2.0"
+}
