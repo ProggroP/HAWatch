@@ -49,3 +49,8 @@ The repository can also be imported into CloudPebble as is.
 ## Credits
 
 - Font: Roboto by Christian Robertson, Apache License 2.0
+
+## License
+
+MIT License, see [LICENSE](LICENSE). The bundled fonts are not covered by it and
+remain under their own licenses.
