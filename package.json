@@ -69,6 +69,11 @@
             "emery",
             "gabbro"
         ],
+        "usesPermissions": [
+                "Location",
+                "LocalNetwork",
+                "Internet"
+        ],
         "uuid": "013f5b1c-e688-4bb5-841b-f3ca41505d23",
         "watchapp": {
             "watchface": true
